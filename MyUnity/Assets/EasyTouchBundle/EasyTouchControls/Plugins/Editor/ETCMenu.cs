@@ -136,7 +136,7 @@ public static class ETCMenu{
 		// TouchInput
 		if ( GameObject.FindObjectOfType(typeof(TouchInputModule)) ){
 			TouchInputModule tm = (TouchInputModule)GameObject.FindObjectOfType(typeof(TouchInputModule));
-			tm.forceModuleActive = true;
+			tm.allowActivationOnStandalone = true;
 		}
 
 		return canvas;

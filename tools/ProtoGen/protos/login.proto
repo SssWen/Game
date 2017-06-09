@@ -1,0 +1,5 @@
+message ReqLogin 
+{ 
+optional string account = 1; // ÕËºÅ 
+optional string password = 2; // ÃÜÂë 
+}

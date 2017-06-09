@@ -1,0 +1,30 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\LuaFramework\Lua\Common\define.lua">
+    <Files>
+      <File FileName="Assets\LuaFramework\Scripts\Manager\LuaManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Manager\NetworkManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Manager\PanelManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\ToLua\Source\Generate\LuaFramework_PanelManagerWrap.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Controller\Command\StartUpCommand.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Manager\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Network\SocketClient.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\ToLua\Core\LuaState.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Common\LuaBehaviour.cs" Line="25" Column="53" />
+      <File FileName="Assets\LuaFramework\ToLua\Core\LuaFunction.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\ToLua\Core\LuaStatePtr.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Manager\ResourceManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Common\LuaLoader.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\Scripts\Controller\Command\SocketCommand.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\ToLua\Source\Generate\LuaFramework_LuaBehaviourWrap.cs" Line="1" Column="1" />
+      <File FileName="Assets\LuaFramework\ToLua\Source\Generate\LuaFramework_NetworkManagerWrap.cs" Line="9" Column="40" />
+      <File FileName="Assets\LuaFramework\Lua\Common\define.lua" Line="30" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="E:\Game.git\tools\LuaFramework_UGUI-master\Assets\LuaFramework\Scripts\Controller\Command\SocketCommand.cs" line="9" column="9" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

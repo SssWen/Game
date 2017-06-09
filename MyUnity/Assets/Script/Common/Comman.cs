@@ -20,4 +20,11 @@ public class Comman {
 	}
 
 	// 反序列化
+	public static T DeSerialize<T>(byte[] bytes) {
+		
+		using (var ms = new MemoryStream (bytes)) {
+			
+			return Serializer.Deserialize<T> (ms);
+		}
+	}
 }

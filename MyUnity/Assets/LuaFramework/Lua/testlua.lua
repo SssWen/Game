@@ -310,4 +310,70 @@ print("=======================LUA函数================================");
 --函数只有一个参数并且此参数是一个字面字符串或者table的构造式，那么圆括号可有可无。
 
 print "hello function";
+--lua为面向对象提供了一种特殊的y7ufa--冒号操作符。表达式 o.foo(o.x)的另一种写法O:foo(x),冒号操作符隐藏的将o作为第一个函数的参数
+--实参和形参 实参多余形参则舍弃多余的实参，如果实参不足则多余的形参初始化为nil
+count = 0;
+function incCount(n)
+	n = n or 1;
+	count = count + n;
+	return count;
+end
+
+a = nil;
+a = incCount();
+print("incCount" .. a);
+
+--lua会调整一个函数的返回值以适应不同的调用情况
+--当一个函数调用作为另一个函数的最后一个参数实参时 第一个函数所有的返回值都将最为实参传入
+function foo2()
+	return 1,2;
+end
+print(foo2()); --1,2
+print(foo2(), 3); --1,3;
+
+
+--return 语句后面的内容不需要圆括号 在该位置写圆括号会导致不同的行为
+--return(f(x))将只返回一个值。无关乎f返回几个值
+
+--关于多重返回值有一个特殊函数 unpack 它接受一个数组作为参数，并从下表1开始返回数组的所有元素
+print(unpack{10,20,30}); -- 10,20,30
+--变成参数
+
+function add(...)
+	for i,v in ipairs(...) do
+		--i是下标 v是值
+		print("value="..v);
+	end
+end
+--add(10,20,30,nil,50); 因为有nil所以lua会报错
+--   ~=是不等
+function printarray(...)
+	for i=1, select('#', ...) do
+		local arg = select(i, ...);
+		if nil ~= arg then
+			print("arg" .. arg);
+		end
+		
+	end
+end
+
+printarray(10,20,50,nil, 60);
+
+
+print("=======================LUA深入函数================================");
+--词法域是指一个函数可以嵌套在另一个函数中，内部函数可以访问外部函数的变量。
+--将函数存储在table的字段中可以支持许多lua的高级应用，例如模块和面向对象编程
+
+function newCounter() 
+	local i = 0;
+	i = i + 1;
+	return i;
+end
+
+c1 = newCounter;
+print("1 = " .. c1());
+print("2 = " .. c1());
+
+--closure 是指一个函数以及一系列这个函数会访问到的“非局部的变量（upvalue）” 因此如果一个closure没有那些
+--会访问到的“非局部变量” 那它就是一个传统概念中的函数
 
